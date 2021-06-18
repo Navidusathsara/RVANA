@@ -18,7 +18,7 @@ const Lang = Language.getString('system_stats');
 
 Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
     if (Config.ALIVEMSG == 'default') {
-        await message.client.sendMessage(message.jid,'```Bot is alive!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n Type .help for command list \n' , MessageType.text);
+        await message.client.sendMessage(message.jid,'```RAVANA Bot is alive!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n Type .ravana for command list \n' , MessageType.text);
     }
     else {
         await message.client.sendMessage(message.jid,Config.ALIVEMSG, MessageType.text);
@@ -35,12 +35,12 @@ Asena.addCommand({pattern: 'sysd', fromMe: false, desc: Lang.SYSD_DESC}, (async 
 
 Asena.addCommand({pattern: 'palive', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
     if (Config.ALIVEMSG == 'default') {
-        await message.client.sendMessage(message.jid,'```Tanrı Türk\'ü Korusun. 🐺 Asena Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n*Telegram Group:* https://t.me/AsenaSupport\n*Telegram Channel:* https://t.me/whatsasenaremaster' , MessageType.text);
+        await message.client.sendMessage(message.jid,'```Tanrı Türk\'ü Korusun. 🇱🇰RAVANA!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n*Whatsapp  Group:* https://chat.whatsapp.com/BZxwFPt5pUe19Y4EW9DjDP\n*Telegram Channel:* https://t.me/joinchat/jgBeq4Wfh4AwMThl' , MessageType.text);
     }
     else {
         await message.client.sendMessage(message.jid,Config.ALIVEMSG, MessageType.text);
     }
-}));
+})
 
 Asena.addCommand({pattern: 'psysd', fromMe: true , dontAddCommandList: true}, (async (message, match) => {
     const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
