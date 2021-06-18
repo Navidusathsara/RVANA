@@ -39,12 +39,12 @@ Asena.addCommand({pattern: 'meme ?(.*)', fromMe: false, desc: Lang.MEMES_DESC}, 
     
 	memeMaker({
         image: location,         
-        outfile: 'asena-meme.png',
+        outfile: 'ravana-meme.png',
         topText: topText,
         bottomText: bottomText,
     }, async function(err) {
         if(err) throw new Error(err)
-        await message.client.sendMessage(message.jid, fs.readFileSync('asena-meme.png'), MessageType.image, {filename: 'RAVANA-meme.png', mimetype: Mimetype.png});
+        await message.client.sendMessage(message.jid, fs.readFileSync('ravana-meme.png'), MessageType.image, {filename: 'ravana-meme.png', mimetype: Mimetype.png});
         await info.delete();    
     });
 }));
