@@ -10,18 +10,14 @@ Asena.addCommand({pattern: 'ravana', fromMe: false, desc: Lang.WP}, (async (mess
     var r_text = new Array ();
     
     
-    r_text[0] = "https://1.bp.blogspot.com/-MP9m28jeB2o/YKIYiztzvyI/AAAAAAAABXo/P6aXxlQWQv8LNSP6SnCLu7Fa9wkZKpZzACLcBGAsYHQ/s1280/annicon%2Bicons%2Band%2Bheaders.jpeg";
-    r_text[1] = "https://1.bp.blogspot.com/-tqx8vh7ZVpc/YKIYi-Y5wLI/AAAAAAAABXw/8qTqoe8ttJMNW-JHvgDZcC904bD48MS8wCLcBGAsYHQ/s750/x%2Bnot%2Bmine%2Bx%2B%2Bshared%2Bby%2B%25EC%2586%259C%25EC%2582%25AC%25ED%2583%2595%2Bon%2BWe%2BHeart%2BIt.jpeg";
-    r_text[2] = "https://1.bp.blogspot.com/-fDjuLKa-xTE/YKIYi7wCnmI/AAAAAAAABXs/aBxO3MbIpvQAFT3uG24fW7PR_4jfH6VeACLcBGAsYHQ/s604/%25D0%259A%25D0%25BE%25D0%25BC%25D0%25B0%25D0%25BD%25D0%25B4%25D0%25B0%2B%25E2%2584%25967.jpeg";
-    r_text[3] = "https://1.bp.blogspot.com/-rl4FCHMLV2s/YKIYjxjMboI/AAAAAAAABX0/z0XsnWdHshsICQpGGva54AQCbVene4XIACLcBGAsYHQ/s600/%25E3%258D%25BF%25EF%25A1%2580%2B%25F0%259D%2598%25AC%25F0%259D%2598%25AF%25F0%259D%2598%25BA%2B%25F0%259D%2598%25A9%25F0%259D%2598%25A6%25F0%259D%2598%25A2%25F0%259D%2598%25A5%25F0%259D%2598%25A6%25F0%259D%2598%25B3%2B%25E2%25A0%2580%25F0%2596%25A3%2598.jpeg";
-    r_text[4] = "https://1.bp.blogspot.com/-FhXQw33e8nU/YKIYkxg-1NI/AAAAAAAABX4/GcNVk8eDauUBNjbxnF2ApFq3eDgJgABFQCLcBGAsYHQ/s1500/%25EC%2586%258C%25EC%259D%2580%2Bon%2BTwitter.jpeg";
-    r_text[5] = "https://1.bp.blogspot.com/-CilVPISVDT8/YKIYk5Rv9OI/AAAAAAAABX8/O7W2sn1r354iI3MzfORKHojMuCMq-mnHQCLcBGAsYHQ/s1500/%25F0%259F%25A6%258B%2Bon%2BTwitter.jpeg";
+    r_text[0] = "https://telegra.ph/file/24cacd9938446a38180fd.png";
+    
     
     var i = Math.floor(6*Math.random())
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `⛦━━━━━💮❪𝐇𝐞𝐥𝐩❫💮━━━━━⛦
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `⛦━━━━━💮RAVANA💮━━━━━⛦
 
 
 𝐇𝐞𝐥𝐥𝐨👋 𝐈 𝐚𝐦 𝐚 RAVANA🇱🇰 𝐛𝐨𝐭.
