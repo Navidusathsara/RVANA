@@ -22,6 +22,6 @@ Asena.addCommand({pattern: 'emoji ?(.*)', fromMe: false, desc: des}, (async (mes
 
         var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/emoji2png?emoji=${encodeURIComponent(match[1])}&type=apple`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made by P∆IN BOT'})
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made by RAVANA BOT💢'})
 
     }));
