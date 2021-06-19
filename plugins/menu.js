@@ -84,9 +84,6 @@ Asena.addCommand({pattern: 'ravana', fromMe: false, desc: Lang.WP}, (async (mess
 
 💮𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ -joke 
 🍙𝙐𝙨𝙚➜ It sends a random joke.
-
-💮𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ -bot 
-🍙𝙐𝙨𝙚➜ Chat with ai bot simsimi.
  
 💮𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ -meme <text>
 🍙𝙐𝙨𝙚➜ Cations the image into a meme.
@@ -138,16 +135,7 @@ Asena.addCommand({pattern: 'ravana', fromMe: false, desc: Lang.WP}, (async (mess
 💮𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ -attp <text>
 🍙𝙐𝙨𝙚➜ Converts text into glowing sticker.
 ■□■□■□■□■□■□■□■□■□■□
-
-💮𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜  -blackpink
-🍙𝙐𝙨𝙚➜  Sends random blackpink image.
-
-💮𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜  -exo 
-🍙𝙐𝙨𝙚➜  Sends random exo image.
-
-💮𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜  -bts 
-🍙𝙐𝙨𝙚➜  Sends random bts image.
-
+═════💢RaVana💢═════
 ▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣
 
 `}) 
