@@ -207,14 +207,15 @@
         },
         "updater": {
             "UPDATER_DESC": "Checks the update.",
-            "UPDATE": "*Your bot is completely up-to-date!*",
-            "NEW_UPDATE": "*New update available for Bot!*\n\nChanges:\n```",
+            "UPDATE": "*RAVANA is completely up-to-date!*",
+            "NEW_UPDATE": "*New update available for RAVANA !*\n\nChanges:\n```",
             "UPDATE_NOW_DESC": "It makes updates.",
             "UPDATING": "_Updating..._",
             "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
             "UPDATED": "*✅ Successfully Updated!*",
             "UPDATED_LOCAL": "*✅ Successfully Updated!*",
-            "AFTER_UPDATE": "*💬 WhatsAsena Restating Automaticly!*"
+            "AFTER_UPDATE": "*💬 RAVANA  Restarting Automatically!*",
+            "IN_AF": "*Please check* ```HEROKU_APP_NAME``` *and* ```app name``` *They must be same.*\n*If these two values ​​are the same, please restore* ```HEROKU_API_KEY```\n\n_To access these settings, use Heroku >> App >> Settings >> Reavel Config Vars_\n_To renew your API key, follow these steps, Heroku >> Account >> API Key then replace old api key in config vars._"
         },
         "weather": {
             "WEATHER_DESC": "Shows the weather.",
