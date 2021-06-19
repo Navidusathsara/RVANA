@@ -20,7 +20,7 @@ const Language = require('../language');
 const Lang = Language.getString('updater');
 
 
-Asena.addCommand({pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC}, (async (message, match) => {
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
     if (commits.total === 0) {
@@ -32,7 +32,7 @@ Asena.addCommand({pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC, don
         var degisiklikler = Lang.NEW_UPDATE;
         commits['all'].map(
             (commit) => {
-                degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
+                degisiklikler += '🔹 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
             }
         );
         
@@ -43,7 +43,7 @@ Asena.addCommand({pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC, don
     }
 }));
 
-Asena.addCommand({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_NOW_DESC, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_NOW_DESC}, (async (message, match) => {
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
     if (commits.total === 0) {
@@ -57,8 +57,11 @@ Asena.addCommand({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_NOW_DE
             try {
                 var app = await heroku.get('/apps/' + Config.HEROKU.APP_NAME)
             } catch {
-                return await message.client.sendMessage(
+                await message.client.sendMessage(
                     message.jid,Lang.INVALID_HEROKU, MessageType.text);
+                await new Promise(r => setTimeout(r, 1000));
+                return await message.client.sendMessage(
+                    message.jid,Lang.IN_AF, MessageType.text);
             }
 
             git.fetch('upstream', Config.BRANCH);
@@ -76,7 +79,7 @@ Asena.addCommand({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_NOW_DE
             await message.client.sendMessage(
                 message.jid,Lang.UPDATED, MessageType.text);
 
-            await messageclient.sendMessage(message.jid,'💬 *BOT Restarting Automatically!* ');
+            await message.sendMessage(Lang.AFTER_UPDATE);
             
         } else {
             git.pull((async (err, update) => {
@@ -86,7 +89,7 @@ Asena.addCommand({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_NOW_DE
                     exec('npm install').stderr.pipe(process.stderr);
                 } else if (err) {
                     await message.client.sendMessage(
-                        message.jid,'*❌ Update failed!*\n*Error:* ```' + err + '```', MessageType.text);
+                        message.jid,'*❌ RAVANA Bot Update fail!*\n*Hata:* ```' + err + '```', MessageType.text);
                 }
             }));
             await guncelleme.delete();
