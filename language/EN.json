@@ -212,9 +212,9 @@
             "UPDATE_NOW_DESC": "It makes updates.",
             "UPDATING": "_Updating..._",
             "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
-            "UPDATED": "*✅ Successfully Updated  Bot!*",
-            "UPDATED_LOCAL": "*✅ Successfully Updated  Bot!*",
-            "AFTER_UPDATE": "*💬 RAVANA Restating Automaticly!*"
+            "UPDATED": "*✅ Successfully Updated!*",
+            "UPDATED_LOCAL": "*✅ Successfully Updated!*",
+            "AFTER_UPDATE": "*💬 WhatsAsena Restating Automaticly!*"
         },
         "weather": {
             "WEATHER_DESC": "Shows the weather.",
