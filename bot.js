@@ -137,10 +137,10 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
         await new Promise(r => setTimeout(r, 1100));
 
         if (config.LANG == 'TR' || config.LANG == 'AZ') {
-            await conn.sendMessage(conn.user.jid, '*RAVANA Çalışıyor!💢*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*RAVANA Kullandığın İçin Teşekkürler 💌*', MessageType.text);
+            await conn.sendMessage(conn.user.jid, '*WhatsAsena Çalışıyor! 🐺*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*WhatsAsena Kullandığın İçin Teşekkürler 💌*', MessageType.text);
         }
         else {
-            await conn.sendMessage(conn.user.jid, '*RAVANA Working!💢*\n\n_Please do not try plugins here. This is your LOG number._\n_You can try commands to any chat :)_\n\n*Thanks for using RAVANA 💌*', MessageType.text);
+            await conn.sendMessage(conn.user.jid, '*WhatsAsena Working! 🐺*\n\n_Please do not try plugins here. This is your LOG number._\n_You can try commands to any chat :)_\n\n*Thanks for using WhatsAsena 💌*', MessageType.text);
         }
     });
     
@@ -228,15 +228,15 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
                         } catch (error) {
                             if (config.LANG == 'TR' || config.LANG == 'AZ') {
                                 await conn.sendMessage(conn.user.jid, '*-- HATA RAPORU [WHATSASENA] --*' + 
-                                    '\n*RAVANA bir hata gerçekleşti!*'+
+                                    '\n*WhatsAsena bir hata gerçekleşti!*'+
                                     '\n_Bu hata logunda numaranız veya karşı bir tarafın numarası olabilir. Lütfen buna dikkat edin!_' +
                                     '\n_Yardım için Telegram grubumuza yazabilirsiniz._' +
                                     '\n_Bu mesaj sizin numaranıza (kaydedilen mesajlar) gitmiş olmalıdır._\n\n' +
                                     '*Gerçekleşen Hata:* ```' + error + '```\n\n'
                                     , MessageType.text);
                             } else {
-                                await conn.sendMessage(conn.user.jid, '*-- ERROR REPORT [RAVANA] --*' + 
-                                    '\n*RAVANA an error has occurred!*'+
+                                await conn.sendMessage(conn.user.jid, '*-- ERROR REPORT [WHATSASENA] --*' + 
+                                    '\n*WhatsAsena an error has occurred!*'+
                                     '\n_This error log may include your number or the number of an opponent. Please be careful with it!_' +
                                     '\n_You can write to our Telegram group for help._' +
                                     '\n_This message should have gone to your number (saved messages)._\n\n' +
